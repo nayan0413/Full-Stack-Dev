@@ -53,11 +53,7 @@ program
 
       todos = todos.filter(t => t.todo !== todoItem);
 
-      let cnt = 1;
-      for(obj of todos){ 
-        obj.id = cnt;
-        cnt++;
-      }
+      todos.forEach((t, i) => t.id = i+1);
 
       fs.writeFile("todos.json", JSON.stringify(todos, null, 2), "utf-8", err => {
         if(err){
