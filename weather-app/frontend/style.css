@@ -1,0 +1,147 @@
+body {
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    height : 100vh;
+    background-color: rgba(142, 131, 235, 0.386);
+}
+
+.weather-box {
+    border : 2px solid black;
+    width : 30vw;
+    height : 65vh;
+    border-radius: 40px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.top {
+    border-bottom : 2px solid black;
+    height : 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCEBFF;
+}
+
+.search-bar {
+    border : 2px solid black;
+    width : 20vw;
+    display : flex;
+    height : 60%;
+}
+
+.search-bar input {
+    width : 75%;
+    border : none;
+    outline : none;
+    padding : 6px;
+    font-size : 14px;
+}
+
+.search-bar button {
+   width : 25%;
+   border : none;
+   border-left : 2px solid black;
+   background : #2F6BFF;
+   cursor : pointer;
+   color: #0F172A;
+   font-size: 18px;
+}
+
+.search-bar button:hover{
+    background-color: #1a52dd;
+}
+
+.mid {
+    height: 45vh;
+    background-color: #F7FBFF;
+}
+
+
+.bottom {
+    height : 10vh;
+    display : flex;
+}
+
+.box1, .box2, .box3{
+    flex : 1;
+    border: 2px solid black;
+    background-color: #DCEBFF;
+}
+
+.box1 {
+    border-left : none;
+    border-right: none;
+    border-bottom: none;
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.box2 { 
+    border-right : none;
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    border-bottom: none;
+}
+
+.box3 { 
+    border-right : none;
+    display : flex;
+    justify-content : space-around;
+    align-items: center;
+    border-bottom: none;
+}
+
+.mid {
+    display : flex;
+    flex-direction: column;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.city {
+    font-size : 35px;
+    font-weight : bold;
+    height : 5vh;
+}
+
+.desc {
+    font-size : 25px;
+    height: 5vh;
+}
+
+.temp {
+    font-size : 35px;
+    font-weight : bold;
+    height : 5vh;
+}
+
+.icon {
+    height : 15vh;
+}
+
+.icon img {
+    height : 140px;
+}
+
+.left {
+    width: 20%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content : space-around;
+    align-items: center;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.value {
+    font-size: 22px;
+}

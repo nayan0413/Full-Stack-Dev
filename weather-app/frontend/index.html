@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-box">
+        <div class="top">
+            <div class="search-bar">
+                <input id = "input" type="text" placeholder="Enter city name...">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="city" id="city"></div>
+            <div class="desc" id="desc"></div>
+            <div class="icon">
+                <img src="" id="icon">
+            </div>
+            <div class="temp" id="temp">
+                
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="box1">
+                <div class="left">
+                    <img src="./icons/feels_like.png" alt="img" height="40px">
+                </div>
+                <div class="right">
+                    <div class="text">Feels like:</div>
+                    <div class="value" id="feels_like"></div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="left">
+                    <img src="./icons/humidity.png" alt="img" height="40px">
+                </div>
+                <div class="right">
+                    <div class="text">Humidity:</div>
+                    <div class="value" id="humidity"></div>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="left">
+                    <img src="./icons/wind.png" alt="img" height="40px">
+                </div>
+                <div class="right">
+                    <div class="text">Wind:</div>
+                    <div class="value" id="wind"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
